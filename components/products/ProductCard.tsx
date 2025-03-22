@@ -11,7 +11,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="border bg-white">
       <Image
-        width={400}
+        width={500}
         height={500}
         src={`/products/${product.image}.jpg`}
         alt={`Imagen platillo ${product.name}`}
