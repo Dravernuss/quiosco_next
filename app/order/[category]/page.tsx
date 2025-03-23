@@ -16,7 +16,7 @@ async function getProducts(category: string) {
 export default async function OrderPage({
   params,
 }: {
-  params: { category: string };
+  params: Promise<{ category: string }>;
 }) {
   const { category } = await params;
   const products = await getProducts(category);
